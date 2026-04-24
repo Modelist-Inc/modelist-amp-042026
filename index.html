@@ -107,12 +107,20 @@ a:hover{color:var(--terra)}
 .hero-bullets li .num{font-size:11px;color:var(--terra);font-weight:700;letter-spacing:.08em;padding-top:3px}
 .hero-bullets li strong{color:var(--soft-black);font-weight:700}
 
-.hero-right{background:var(--soft-black);color:#fff;padding:36px 34px;position:sticky;top:40px;min-height:480px;display:flex;flex-direction:column;justify-content:space-between}
+.hero-right-col{display:flex;flex-direction:column;gap:18px;position:sticky;top:40px}
+.hero-right{background:var(--soft-black);color:#fff;padding:36px 34px;min-height:480px;display:flex;flex-direction:column;justify-content:space-between}
 .hero-right .tag{font-size:10px;color:var(--terra);letter-spacing:.2em;text-transform:uppercase;font-weight:600;margin-bottom:18px}
 .hero-right h3{color:#fff;font-size:24px;line-height:1.25;margin-bottom:18px;font-weight:700;letter-spacing:-.01em}
 .hero-right p{color:rgba(255,255,255,.75);font-size:14px;line-height:1.6}
 .hero-right .foot{margin-top:28px;padding-top:20px;border-top:1px solid rgba(255,255,255,.1);font-size:10px;color:var(--slate-lt);letter-spacing:.12em;text-transform:uppercase}
 .hero-right .foot strong{color:#fff;display:block;font-size:11px;margin-bottom:4px;letter-spacing:.14em}
+.li-follow-below{display:flex;align-items:center;gap:14px;padding:20px 26px;background:#fff;border:1px solid var(--border);color:var(--soft-black);font-size:13.5px;letter-spacing:.14em;font-weight:700;text-transform:uppercase;text-decoration:none;transition:all .22s;width:100%}
+.li-follow-below:hover{background:var(--soft-black);border-color:var(--soft-black);color:#fff;transform:translateY(-1px);box-shadow:0 8px 20px -10px rgba(0,0,0,.25)}
+.li-follow-below svg{width:22px;height:22px;flex-shrink:0;color:#0A66C2;transition:color .22s}
+.li-follow-below:hover svg{color:#fff}
+.li-follow-below span:first-of-type{flex:1}
+.li-follow-below .arrow{font-size:18px;font-weight:400;letter-spacing:0;transition:transform .22s}
+.li-follow-below:hover .arrow{transform:translateX(3px)}
 
 /* Section 2: Why Modelist at Ameriprise */
 .why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
@@ -558,17 +566,25 @@ function section_intro(){
         </ul>
       </div>
 
-      <div class="hero-right">
-        <div>
-          <div class="tag">The Modelist Advantage</div>
-          <h3>Your outsourced investment research office — purpose-built for Ameriprise practices.</h3>
-          <p style="margin-bottom:16px;">Modelist is uniquely positioned to serve as the outsourced investment office for Ameriprise advisors. We combine experience working inside the Ameriprise network with a disciplined respect for its compliance guidelines and operational realities.</p>
-          <p><strong style="color:#fff;">But here's what sets us apart:</strong> we build everything around <em>your</em> brand as an independent advisor, not ours. Your practice, your voice, your client relationships stay at the forefront — Modelist delivers the institutional-grade infrastructure behind them.</p>
+      <div class="hero-right-col">
+        <div class="hero-right">
+          <div>
+            <div class="tag">The Modelist Advantage</div>
+            <h3>Your outsourced investment research office — purpose-built for Ameriprise practices.</h3>
+            <p style="margin-bottom:16px;">Modelist is uniquely positioned to serve as the outsourced investment office for Ameriprise advisors. We combine experience working inside the Ameriprise network with a disciplined respect for its compliance guidelines and operational realities.</p>
+            <p><strong style="color:#fff;">But here's what sets us apart:</strong> we build everything around <em>your</em> brand as an independent advisor, not ours. Your practice, your voice, your client relationships stay at the forefront — Modelist delivers the institutional-grade infrastructure behind them.</p>
+          </div>
+          <div class="foot">
+            <strong>The Result</strong>
+            Scale and sophistication — within the investment guidelines of each model.
+          </div>
         </div>
-        <div class="foot">
-          <strong>The Result</strong>
-          Scale and sophistication — within the investment guidelines of each model.
-        </div>
+
+        <a class="li-follow-below" href="https://www.linkedin.com/company/modelistinc" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.61 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+          <span>Follow Modelist on LinkedIn</span>
+          <span class="arrow">→</span>
+        </a>
       </div>
     </div>
   </section>`;
